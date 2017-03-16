@@ -1,0 +1,7 @@
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+<%= f.error_notification%>
+
+  <%= f.input :description, placeholder: "Enter a dose description" %>
+  <%= f.input :ingredient_id, collection: Ingredient.all %>
+  <%= f.submit %>
+<% end %>
