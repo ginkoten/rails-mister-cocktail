@@ -1,10 +1,13 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to cocktails_path, class: "navbar-wagon-brand" do %>
-  <%= image_tag "logo.png", id: 'logo' %>
+    <%= image_tag "logo.png", id: 'logo' %>
   <% end %>
   <!-- Button (call-to-action) -->
-  <%= link_to t(".top_call_to_action", default: "New Cocktail"), new_cocktail_path, class: "navbar-wagon-link" %>
+  <%= link_to new_cocktail_path, class: "navbar-wagon-link" do %>
+    New Cocktail
+    <i class="fa fa-long-arrow-right"></i>
+  <% end %>
 </div>
 
 

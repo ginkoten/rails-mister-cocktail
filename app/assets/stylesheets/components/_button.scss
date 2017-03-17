@@ -6,8 +6,21 @@
   font-family: 'Raleway';
   transition: all 0.8s ease;
   &:hover {
-    background-color: #C99E5A;
-    opacity: 0.8;
+    background-color: #B08644;
+  }
+}
+
+.btn-form {
+  color: white;
+  padding: 10px 50px;
+  background-color: #C99E5A;
+  border-radius: 100px;
+  border: 1px solid #C99E5A;
+  transition: all 0.8 ease;
+  margin-top: 30px;
+  &:hover {
+    background-color: #B08644;
+    border: 1px solid #B08644;
   }
 }
 

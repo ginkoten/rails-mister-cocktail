@@ -1,25 +1,30 @@
-<div class="banner" style="background-image: linear-gradient(#202020), url('/assets/images/background.jpg');">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), url('<%= asset_path('background2.jpg') %>');">
   <div class="banner-content">
     <h1>BEST COCKTAILS</h1>
     <p>20 Best Cocktails Everyone Should Know</p>
-    <a class="btn btn-primary btn-lg">GET IT</a>
+    <a href="#cocktails-content" class="btn btn-primary btn-lg">GET IT</a>
   </div>
 </div>
 
-<div class="container text-center padded">
+
+<div class="container padded" id="cocktails-content">
+<%= image_tag "recipe.png", id: "recipe", width: 100, class: "padded" %>
+
   <div class="row">
   <% @cocktails.each do |cocktail| %>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(#171717, #171717), url('background.jpg');">
+    <div class="col-xs-12 col-sm-4 padded-small">
+      <div class="card" style="background: #202020 url('<%= cocktail.photo? ? cl_image_path(cocktail.photo.path, height: 300, width: 400, crop: :fill) : '' %>');">
         <div class="card-name">
           <h4><%= cocktail.name %></h4>
         </div>
         <div class="card-text">
           <%= link_to "See Details", cocktail_path(cocktail) %>
         </div>
-        <a class="card-link" href="#" ></a>
+        <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
       </div>
     </div>
     <% end %>
   </div>
 </div>
+
+
