@@ -14,5 +14,13 @@
 @import "components/index";
 @import "pages/index";
 
+body {
+  background-color: #202020;
+  font-family: 'Raleway';
+  font-weight: 200;
+}
 
-
+.padded {
+  margin-top: 40px;
+  padded: 30px 0;
+}

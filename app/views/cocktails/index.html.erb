@@ -1,9 +1,25 @@
-<div class="container text-center">
-<h1>Cocktails List</h1>
-  <% @cocktails.each do |cocktail| %>
-  <div class="card">
-    <h2><%= cocktail.name %></h2>
-    <%= link_to "See Details", cocktail_path(cocktail) %>
+<div class="banner" style="background-image: linear-gradient(#202020), url('/assets/images/background.jpg');">
+  <div class="banner-content">
+    <h1>BEST COCKTAILS</h1>
+    <p>20 Best Cocktails Everyone Should Know</p>
+    <a class="btn btn-primary btn-lg">GET IT</a>
   </div>
-  <% end %>
+</div>
+
+<div class="container text-center padded">
+  <div class="row">
+  <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(#171717, #171717), url('background.jpg');">
+        <div class="card-name">
+          <h4><%= cocktail.name %></h4>
+        </div>
+        <div class="card-text">
+          <%= link_to "See Details", cocktail_path(cocktail) %>
+        </div>
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>

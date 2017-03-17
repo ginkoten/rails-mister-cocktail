@@ -9,6 +9,7 @@ end
 ruby '2.3.3'
 
 gem 'faker'
+gem 'figaro'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'

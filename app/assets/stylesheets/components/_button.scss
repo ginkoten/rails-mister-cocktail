@@ -1,0 +1,14 @@
+.btn {
+  background-color: #C99E5A;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 60px;
+  font-family: 'Raleway';
+  transition: all 0.8s ease;
+  &:hover {
+    background-color: #C99E5A;
+    opacity: 0.8;
+  }
+}
+
+

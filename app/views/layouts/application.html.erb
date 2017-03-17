@@ -2,15 +2,8 @@
 <html>
   <head>
     <title>RailsMisterCocktail</title>
-    <%= csrf_meta_tags %> <div class="navbar-wagon">
-      <!-- Logo -->
-      <%= link_to cocktails_path, class: "navbar-wagon-brand" do %>
-        <%= image_tag "logo.png", id: 'logo' %>
-      <% end %>
-        <!-- Button (call-to-action) -->
-        <%= link_to t(".top_call_to_action", default: "New Cocktail"), new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
-    </div>
-
+    <%= csrf_meta_tags %>
+    <%= link_to "", "https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600", rel: "stylesheet" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +11,7 @@
   </head>
 
   <body>
-
+    <%= render 'shared/navbar' %>
 
     <%= yield %>
   </body>
