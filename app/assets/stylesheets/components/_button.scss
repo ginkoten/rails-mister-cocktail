@@ -2,7 +2,7 @@
   background-color: #C99E5A;
   border: none;
   border-radius: 100px;
-  padding: 12px 60px;
+  padding: 12px 55px;
   font-family: 'Raleway';
   transition: all 0.8s ease;
   &:hover {
@@ -23,5 +23,49 @@
     border: 1px solid #B08644;
   }
 }
+
+
+
+.btn-add {
+  color: #C99E5A;
+  padding: 10px 40px;
+  border-radius: 100px;
+  border: 1px solid #C99E5A;
+  padding: 12px 45px;
+  margin: 30px;
+  transition: all 0.8s ease;
+  &:hover {
+    background-color: #C99E5A;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.trash-grey {
+  opacity: 0.15;
+  transition: all 0.6s ease;
+  &:hover {
+    color: white;
+    opacity: 1;
+  }
+}
+
+.btn-delete {
+  background-color: #171717;
+  font-weight: 300;
+  color: #9B9B9B;
+  opacity: 0.8;
+  padding: 12px 32px;
+  transition: all 0.6s ease;
+  margin: 10px 120px;
+  &:hover {
+    background-color: #0B0B0B;
+    color: white;
+  }
+}
+
+
+
+
 
 

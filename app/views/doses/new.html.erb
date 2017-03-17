@@ -2,11 +2,10 @@
 <%= f.error_notification%>
 <div class="form padded-small">
   <div class="form-inputs">
+  <h2>New Cocktail</h2>
     <%= f.input :description, placeholder: "Enter a dose description" %>
     <%= f.input :ingredient_id, collection: Ingredient.all %>
   </div>
-  <div class="form-btn">
-    <span><%= f.submit %></span>
-  </div>
+  <%= f.submit "Submit", class: "btn-form" %>
 </div>
 <% end %>
