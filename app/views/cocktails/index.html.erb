@@ -7,11 +7,11 @@
 </div>
 
 <div class="container padded" id="cocktails-content">
-<%= image_tag "recipe.png", id: "recipe", class: "padded" %>
+  <%= image_tag "recipe.png", id: "recipe", class: "padded" %>
 
   <div class="row">
-  <% @cocktails.each do |cocktail| %>
-    <div class="col-xs-12 col-sm-4 padded-small">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-6 col-md-4 padded-small">
       <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url('<%= cocktail.photo? ? cl_image_path(cocktail.photo.path, height: 300, width: 400, crop: :fill) : '' %>');">
         <div class="card-name">
           <h4><%= cocktail.name %></h4>
@@ -25,9 +25,3 @@
     <% end %>
   </div>
 </div>
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 <div class="container padded show text-center">
   <% if @cocktail.photo? %>
-    <%= cl_image_tag @cocktail.photo.path, crop: :fill, class: "big-image" %>
+  <%= cl_image_tag @cocktail.photo.path, crop: :fill, class: "big-image" %>
   <% end %>
 
   <h1><%= @cocktail.name.upcase %><h1>
@@ -19,15 +19,15 @@
     <% end %>
     <% end %>
     <div class="btns">
-    <%= link_to new_cocktail_dose_path(@cocktail), class: "btn-add" do %>
-    <i class="fa fa-plus"></i>
-    Add Dose
-    <% end%>
-    <br><br>
-    <%= link_to cocktail_path(@cocktail), method: :delete, class: "btn btn-delete" do %>
-    <i class="fa fa-trash trash-white"></i>
-    Delete Cocktail
-    <% end %>
+      <%= link_to new_cocktail_dose_path(@cocktail), class: "btn-add" do %>
+      <i class="fa fa-plus"></i>
+      Add Dose
+      <% end%>
+      <br><br>
+      <%= link_to cocktail_path(@cocktail), method: :delete, class: "btn btn-delete" do %>
+      <i class="fa fa-trash trash-white"></i>
+      Delete Cocktail
+      <% end %>
     </div>
   </div>
 
