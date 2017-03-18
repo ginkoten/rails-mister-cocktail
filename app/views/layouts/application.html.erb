@@ -3,7 +3,8 @@
   <head>
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
-    <%= link_to "", "https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600", rel: "stylesheet" %>
+    <%= stylesheet_link_tag    "https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600", rel: "stylesheet" %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= cloudinary_js_config %> <!-- Append this after the main `javascript_include_tag`. -->
