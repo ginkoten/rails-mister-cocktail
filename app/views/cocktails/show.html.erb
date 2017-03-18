@@ -3,10 +3,10 @@
     <%= cl_image_tag @cocktail.photo.path, crop: :fill, class: "big-image" %>
   <% end %>
 
-  <h1><%= @cocktail.name %><h1>
+  <h1><%= @cocktail.name.upcase %><h1>
     <hr>
-    <h4>Doses Show</h4>
-    <p>★★★★★</p>
+    <h4>Ingredients</h4>
+    <p class="stars">★★★★★</p>
     <% @cocktail.doses.each do |dose| %>
     <p>
       <br>

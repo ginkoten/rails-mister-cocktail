@@ -12,7 +12,7 @@
   <div class="row">
   <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-4 padded-small">
-      <div class="card" style="background: #202020 url('<%= cocktail.photo? ? cl_image_path(cocktail.photo.path, height: 300, width: 400, crop: :fill) : '' %>');">
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url('<%= cocktail.photo? ? cl_image_path(cocktail.photo.path, height: 300, width: 400, crop: :fill) : '' %>');">
         <div class="card-name">
           <h4><%= cocktail.name %></h4>
         </div>
@@ -25,5 +25,24 @@
     <% end %>
   </div>
 </div>
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <ul class="list-inline">
+          <li><a href=""><i class="fa fa-wechat"></i></a></li>
+          <li><a href="http://www.facebook.com/jing.zhu.5283" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/jing-zhu-270610b0/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-xs-8 text-right">
+        <p>© GinkoTen</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
