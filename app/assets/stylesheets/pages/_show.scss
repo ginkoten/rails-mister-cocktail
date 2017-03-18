@@ -1,9 +1,14 @@
-.big-image {
+.big-image-wrapper {
+  max-width: 500px;
+  margin: 0 auto 40px;
   border-radius: 5px;
-  margin-bottom: 40px;
-  width: 500px;
-  height: 375px;
+  overflow: hidden;
+}
+
+.big-image {
   background-color: #171717;
+  background-size: cover;
+  padding-top: 100%;
 }
 
 .show  {
