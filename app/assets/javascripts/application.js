@@ -21,3 +21,14 @@
 //= require attachinary
 //= require_tree .
 
+$(function(){
+    $(".banner-content h1 span").typed({
+        strings: ["BEST COCKTAILS"],
+        typeSpeed: 0
+    });
+    $(".banner-content p span").typed({
+        strings: ["20 Best Cocktails Everyone Should Know"],
+        startDelay: 3,
+        typeSpeed: 0
+    });
+});
