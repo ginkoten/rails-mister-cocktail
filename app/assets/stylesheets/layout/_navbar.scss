@@ -42,9 +42,9 @@
 .navbar-wagon-link {
   color: #C99E5A;
   font-size: 14px;
+  transition: all 0.8s ease;
   &:hover {
-  color: #C99E5A;
-  opacity: 0.8;
+  color: #B08644;
   text-decoration: none;
   }
 }
@@ -130,3 +130,5 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+

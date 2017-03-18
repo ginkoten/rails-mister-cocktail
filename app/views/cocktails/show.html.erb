@@ -1,6 +1,6 @@
 <div class="container padded show text-center">
   <% if @cocktail.photo? %>
-  <%= cl_image_tag @cocktail.photo.path, crop: :fill, class: "big-image" %>
+    <%= cl_image_tag @cocktail.photo.path, crop: :fill, class: "big-image" %>
   <% end %>
 
   <h1><%= @cocktail.name %><h1>
