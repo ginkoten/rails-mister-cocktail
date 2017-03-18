@@ -6,20 +6,32 @@
   margin-top: 100px;
   margin-bottom: 0;
   transition: all 0.8s ease;
-  & p {
-  margin-top: 17px;
+  p {
+    margin-top: 17px;
   }
-  & ul {
+  ul {
     margin-top: 10px;
   }
-  & a {
+  a {
     color: #CCCCCC;
     font-size: 18px;
     letter-spacing: 20px;
     transition: color 0.5s ease;
   }
-  & a:hover{
+  a:hover{
     color: $yellow;
+  }
+}
+
+#wechat-qrocde a {
+  position: relative;
+  span {
+    display: none;
+    position: absolute;
+  }
+  &:hover span {
+    display: block;
+    text-align: center;
   }
 }
 
