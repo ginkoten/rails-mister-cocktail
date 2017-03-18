@@ -20,25 +20,25 @@ body {
   font-family: 'Raleway';
   font-weight: 200;
 }
-
 a {
   color: white;
   text-decoration: none;
   text-link: none;
 }
-
 hr {
   opacity: 0.1;
   margin: 40px 0;
 }
-
 .padded {
   margin-top: 30px;
   padding: 30px 0;
 }
-
 .padded-small {
   margin-top: 20px;
   padding: 20px;
 }
+.page-container {
+  height: 90vh;
+}
+
 

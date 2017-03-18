@@ -1,11 +1,13 @@
-<%= simple_form_for([@cocktail, @dose]) do |f| %>
-<%= f.error_notification%>
-<div class="form padded-small">
-  <div class="form-inputs">
-    <h2>New Cocktail</h2>
-    <%= f.input :description, placeholder: "Enter a dose description" %>
-    <%= f.input :ingredient_id, collection: Ingredient.all %>
+<div class="page-conrainer">
+  <%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.error_notification%>
+  <div class="form padded-small">
+    <div class="form-inputs">
+      <h2>New Cocktail</h2>
+      <%= f.input :description, placeholder: "Enter a dose description" %>
+      <%= f.input :ingredient_id, collection: Ingredient.all %>
+    </div>
+    <%= f.submit "Submit", class: "btn-form" %>
   </div>
-  <%= f.submit "Submit", class: "btn-form" %>
+  <% end %>
 </div>
-<% end %>

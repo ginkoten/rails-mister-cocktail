@@ -25,11 +25,13 @@
 
 #wechat-qrocde a {
   position: relative;
-  span {
+  img {
     display: none;
     position: absolute;
+    width: 400px;
+    bottom: 0;
   }
-  &:hover span {
+  &:hover img {
     display: block;
     text-align: center;
   }
