@@ -1,4 +1,4 @@
-FROM ruby:2.4
+FROM ruby:2.2
 
 RUN mkdir /workspace/ -p
 COPY . /workspace/
